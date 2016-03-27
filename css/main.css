@@ -18,11 +18,62 @@ html {
   box-sizing: inherit;
 }
 
+div {
+  position: relative;
+  max-width: 100%;
+}
+
+.atlas {
+  display:block;
+}
+
+.hercules {
+  display:block;
+}
+
+.ornate {
+  display:block;
+}
+
 img {
   max-width: 50px;
+  position: relative;
+  left: 100px;
 }
 
 body {
   font-family: arial;
   font-weight: lighter;
+  position: absolute;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img {
+    position: relative;
+    left: 10px;
+  }
+
+.ornate {
+  position:relative;
+  bottom: 80px;
+  left: 70px;
+}
+
+.hercules {
+  position:relative;
+  bottom: 80px;
+  left: 70px;
+}
+
+.atlas {
+  position:relative;
+  bottom: 80px;
+  left: 70px;
+}
+
+@media only screen and (min-width: 38em) {
+
+.img {
+  display: inline-block;
 }
